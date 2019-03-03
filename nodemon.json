@@ -1,0 +1,7 @@
+{
+    "env":{
+        "MONGO_USER": "flagspotAdmin",
+        "MONGO_PASSWORD": "YW6BqYxIMr9stxTC",
+        "MONGO_DB":"flagspot-db"
+    }
+}

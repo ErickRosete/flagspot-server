@@ -3,10 +3,6 @@ const businessCategoryDef = `
         _id: ID!
         name: String
     }
-
-    input BusinessCategoryInput{
-        name: String
-    }
 `;
 
 const businessCategoryQuery = `
@@ -15,8 +11,8 @@ const businessCategoryQuery = `
 `;
 
 const businessCategoryMutation = `
-    createBusinessCategory(businessCategoryInput: BusinessCategoryInput!): BusinessCategory
-    updateBusinessCategory(id: ID!, businessCategoryInput: BusinessCategoryInput!): BusinessCategory
+    createBusinessCategory(name: String!): BusinessCategory
+    updateBusinessCategory(id: ID!, name: String!): BusinessCategory
     deleteBusinessCategory(id: ID!): BusinessCategory
 `;
 

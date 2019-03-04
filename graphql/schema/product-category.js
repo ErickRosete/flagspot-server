@@ -3,10 +3,6 @@ const productCategoryDef = `
         _id: ID!
         name: String
     }
-
-    input ProductCategoryInput{
-        name: String
-    }
 `;
 
 const productCategoryQuery = `
@@ -15,8 +11,8 @@ const productCategoryQuery = `
 `;
 
 const productCategoryMutation = `
-    createProductCategory(productCategoryInput: ProductCategoryInput!): ProductCategory
-    updateProductCategory(id: ID!, productCategoryInput: ProductCategoryInput!): ProductCategory
+    createProductCategory(name: String!): ProductCategory
+    updateProductCategory(id: ID!, name: String!): ProductCategory
     deleteProductCategory(id: ID!): ProductCategory
 `;
 
